@@ -8,6 +8,7 @@
   --sec-light-mint: #e8f5e9;
   --sec-middle-mint: #c8e6c9;
   --sec-dark-mint: #a5d6a7;
+  --sec-superdark-mint: #75a478;
 }
 
 .container {
@@ -16,8 +17,245 @@
   margin: 0 auto;
 }
 
+/* banner */
 #banner {
   height: 100vh;
   background-color: var(--sec-light-mint);
 }
 
+/* about */
+#about {
+  background-color: var(--sec-light-yellow);
+}
+
+.about_wrap {
+  width: 1330px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.about_img {
+  background-color: var(--sec-middle-yellow);
+  margin-top: 240px;
+  width: 695px;
+  height: 450px;
+  margin-right: 48px;
+}
+
+.about_tit {
+  background-color: var(--sec-middle-yellow);
+  margin-top: 240px;
+  width: 515px;
+}
+
+/* menu */
+#menu {
+  background-color: var(--sec-light-mint);
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu_left {
+  background-color: var(--sec-middle-mint);
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 220px;
+  margin-left: 140px;
+  width: 700px;
+  height: 580px;
+}
+
+.menu_img_traveller {
+  background-color: var(--sec-dark-mint);
+  width: 400px;
+  height: 280px;
+  margin-left: 300px;
+}
+
+.menu_img_men {
+  background-color: var(--sec-dark-mint);
+  width: 400px;
+  height: 280px;
+  margin-top: 20px;
+}
+
+.menu_img_life {
+  background-color: var(--sec-dark-mint);
+  width: 280px;
+  height: 280px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.menu_right {
+  margin-top: 220px;
+}
+
+.menu_img_signature {
+  background-color: var(--sec-dark-mint);
+  width: 320px;
+  height: 580px;
+}
+
+/* new */
+#new {
+  background-color: var(--sec-light-yellow);
+  margin-left: 370px;
+  overflow: hidden;
+}
+
+.new_tit {
+  padding-top: 220px;
+}
+
+.new_item_box {
+  display: flex;
+}
+
+.new_item {
+  background-color: var(--sec-middle-yellow);
+  width: 350px;
+  height: 510px;
+  margin-right: 20px;
+}
+
+.new_item:last-child {
+  margin-right: 0;
+}
+
+.new_item_img {
+  background-color: var(--sec-dark-yellow);
+  width: 350px;
+  height: 420px;
+}
+
+/* season */
+#season {
+  background-color: var(--sec-light-yellow);
+  margin-top: 200px;
+  padding-top: 180px;
+}
+
+#season .container {
+  background-color: var(--sec-middle-yellow);
+  display: flex;
+  justify-content: space-between;
+}
+
+.season_left {
+  background-color: var(--sec-dark-yellow);
+  width: 590px;
+}
+
+.season_tit {
+  background-color: var(--sec-superdark-yellow);
+}
+
+.season_left_img {
+  background-color: var(--sec-superdark-yellow);
+  margin-top: 60px;
+  margin-right: 90px;
+  width: 500px;
+  height: 350px;
+}
+
+.season_right {
+  position: relative;
+}
+
+.season_right_img {
+  background-color: var(--sec-superdark-yellow);
+  margin-left: 140px;
+  margin-top: 55px;
+  width: 450px;
+  height: 700px;
+}
+
+.season_right p {
+  margin-bottom: 18px;
+  position: absolute;
+  left: 0;
+  bottom: 150px;
+  transform: rotate(270deg);
+}
+
+/* journal */
+#journal {
+  background-color: var(--sec-light-mint);
+  margin-top: 185px;
+}
+
+#journal .container {
+  background-color: var(--sec-middle-mint);
+  max-width: 1090px;
+}
+
+.journal_item_box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.journal_item {
+  background-color: var(--sec-dark-mint);
+  width: 350px;
+  height: 155px;
+}
+
+.journal_item_img {
+  background-color: var(--sec-superdark-mint);
+  width: 350px;
+  height: 105px;
+}
+
+/* sns */
+#sns {
+  background-color: var(--sec-light-yellow);
+  margin-top: 260px;
+}
+
+#sns .container {
+  background-color: var(--sec-middle-yellow);
+  max-width: 1090px;
+}
+
+.sns_img_box_top {
+  margin-left: 180px;
+  margin-right: 260px;
+  display: flex;
+}
+
+.sns_img_box_bottom {
+  margin-top: 20px;
+  margin-left: 260px;
+  margin-right: 180px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sns_tit {
+  margin-top: 218px;
+}
+
+.sns_img {
+  background-color: var(--sec-superdark-yellow);
+  width: 250px;
+  height: 250px;
+  margin-right: 20px;
+}
+
+/* footer */
+#footer {
+  background-color: var(--sec-light-mint);
+  margin-top: 290px;
+  margin-bottom: 90px;
+}
+
+.footer_cs {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_copyright {
+  margin-top: 40px;
+}
