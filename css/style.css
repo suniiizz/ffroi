@@ -1,0 +1,23 @@
+:root {
+  /* Color */
+  --sec-light-yellow: #fff3e0;
+  --sec-middle-yellow: #ffe0b2;
+  --sec-dark-yellow: #ffcc80;
+  --sec-superdark-yellow: #ffb74d;
+
+  --sec-light-mint: #e8f5e9;
+  --sec-middle-mint: #c8e6c9;
+  --sec-dark-mint: #a5d6a7;
+}
+
+.container {
+  max-width: 1180px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#banner {
+  height: 100vh;
+  background-color: var(--sec-light-mint);
+}
+
