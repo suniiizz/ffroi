@@ -8,11 +8,15 @@
 
   <!-- Webfont -->
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
   
   <!-- Style -->
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
 </head>
 
 <body>
@@ -20,7 +24,21 @@
   <nav id="nav"></nav>
   
   <!-- banner -->
-  <section id="banner"></section>
+  <section id="banner">
+    <div class="banner_wrap swiper mySwiper">
+      <div class="banner_set swiper-wrapper">
+        <div class="banner swiper-slide">banner 1</div>
+        <div class="banner swiper-slide">banner 2</div>
+        <div class="banner swiper-slide">banner 3</div>
+      </div>
+
+      <!-- 네비게이션 버튼 -->
+      <div class="bannerBtn swiper-button-next"></div>
+      <div class="bannerBtn swiper-button-prev"></div>
+      
+      <div class="bannerBtn swiper-pagination"></div>
+    </div>
+  </section>
 
   <!-- about -->
   <section id="about" class="about_wrap">
@@ -62,51 +80,57 @@
   </section>
 
 <!-- new -->
-  <section id="new">
+  <section id="new" class="new_container">
     <div class="new_tit">
       <h1>NEW RELEASE</h1>
     </div>
-    <div class="new_item_box">
-      <div class="new_item">
-        <div class="new_item_img"></div>
-        <div class="new_item_txt">
-          <h4>SIGNATURE</h4>
-          <h2>Aver_mini v</h2>
-          <p>260,000</p>
+    <div class="new_item_box swiper mySwiper">
+      <div class="new_item_set swiper-wrapper">
+        <div class="new_item swiper-slide">
+          <div class="new_item_img"></div>
+          <div class="new_item_txt">
+            <h4>SIGNATURE</h4>
+            <h2>Aver_mini v</h2>
+            <p>260,000</p>
+          </div>
+        </div>
+        <div class="new_item swiper-slide">
+          <div class="new_item_img"></div>
+          <div class="new_item_txt">
+            <h4>SIGNATURE</h4>
+            <h2>Aver_mini v</h2>
+            <p>260,000</p>
+          </div>
+        </div>
+        <div class="new_item swiper-slide">
+          <div class="new_item_img"></div>
+          <div class="new_item_txt">
+            <h4>SIGNATURE</h4>
+            <h2>Aver_mini v</h2>
+            <p>260,000</p>
+          </div>
+        </div>
+        <div class="new_item swiper-slide">
+          <div class="new_item_img"></div>
+          <div class="new_item_txt">
+            <h4>SIGNATURE</h4>
+            <h2>Aver_mini v</h2>
+            <p>260,000</p>
+          </div>
+        </div>
+        <div class="new_item swiper-slide">
+          <div class="new_item_img"></div>
+          <div class="new_item_txt">
+            <h4>SIGNATURE</h4>
+            <h2>Aver_mini v</h2>
+            <p>260,000</p>
+          </div>
         </div>
       </div>
-      <div class="new_item">
-        <div class="new_item_img"></div>
-        <div class="new_item_txt">
-          <h4>SIGNATURE</h4>
-          <h2>Aver_mini v</h2>
-          <p>260,000</p>
-        </div>
-      </div>
-      <div class="new_item">
-        <div class="new_item_img"></div>
-        <div class="new_item_txt">
-          <h4>SIGNATURE</h4>
-          <h2>Aver_mini v</h2>
-          <p>260,000</p>
-        </div>
-      </div>
-      <div class="new_item">
-        <div class="new_item_img"></div>
-        <div class="new_item_txt">
-          <h4>SIGNATURE</h4>
-          <h2>Aver_mini v</h2>
-          <p>260,000</p>
-        </div>
-      </div>
-      <div class="new_item">
-        <div class="new_item_img"></div>
-        <div class="new_item_txt">
-          <h4>SIGNATURE</h4>
-          <h2>Aver_mini v</h2>
-          <p>260,000</p>
-        </div>
-      </div>
+
+      <!-- 네비게이션 버튼 -->
+      <div class="newBtn swiper-button-next"></div>
+      <div class="newBtn swiper-button-prev"></div>
     </div>
   </section>
 
@@ -213,5 +237,53 @@
       <p>이메일 : info.ffroi@gmail.com │ 사업자등록번호 : 206 32 02096 │ 통신판매업신고 : 제 2018 - 서울광진 - 1211 호 │ 호스팅 : 카페24 │ copyright all right reserved ffroi </p>
     </div>
   </section>
+
+  <!-- script -->
+  <!-- Swiper -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <script>
+    //Swiper banner
+    let banSwiper = new Swiper(".banner_wrap.mySwiper", {
+      slidesPerView: 1,
+      loop: true,
+      keyboard: {
+        enabled: true,
+      },
+      // autoplay: {
+      //   delay: 5000,
+      //   disableOnInteraction: false,
+      // },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".bannerBtn.swiper-button-next",
+        prevEl: ".bannerBtn.swiper-button-prev",
+      },
+    });
+
+    //Swiper new
+    let NewSwiper = new Swiper(".new_item_box.mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        breakpoints: {
+          768: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+        },
+        navigation: {
+          nextEl: ".newBtn.swiper-button-next",
+          prevEl: ".newBtn.swiper-button-prev",
+        },
+      });
+  </script>
+
 </body>
 </html>
