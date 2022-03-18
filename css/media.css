@@ -147,12 +147,13 @@
     position: relative;
   }
 
-  .sns_img_box_top {
+  .sns_top {
     margin: 0;
+    justify-content: center;
   }
 
-  .sns_img_box_bottom {
-    justify-content: flex-start;
+  .sns_bottom {
+    justify-content: center;
     margin-left: 0;
     margin-right: 0;
   }
