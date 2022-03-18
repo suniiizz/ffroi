@@ -10,7 +10,7 @@
   /* banner */
   #banner {
     width: 100%;
-    height: 50vh;
+    height: 60vh;
   }
 
   /* about */
@@ -58,7 +58,119 @@
     height: 100px;
     margin-left: 0;
   }
+
+  .menu_right {
+    margin-top: 20px;
+  }
+
+  .menu_img_signature {
+    width: 100%;
+    height: 100px;
+    margin: 0;
+  }
+
+  /* new */
+  .new_container {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .new_tit {
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+    margin-top: 100px;
+  }
+
+  .new_item_set.swiper-wrapper {
+    left: 0;
+  }
+
+  .new_item {
+    width: 100% !important;
+  }
   
+  /* season */
+  #season {
+    margin-top: 100px;
+    padding-top: 100px;
+  }
+
+  #season .container {
+    flex-direction: column;
+  }
+
+  .season_left {
+    width: 100%;
+  }
+
+  .season_left_img {
+    width: 100%;
+  }
+
+  .season_right_img {
+    margin-top: 20px;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .season_right p {
+    position: static;
+    transform: rotate(0);
+    padding-top: 10px;
+  }
+
+  /* journal */
+  #journal {
+    margin-top: 200px;
+  }
+
+  .journal_item_box {
+    flex-direction: column;
+  }
+
+  .journal_item {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .journal_item_img {
+    width: 100%;
+  }
+
+  /* sns */
+  #sns {
+    margin-top: 200px;
+  }
+
+  #sns .container {
+    position: relative;
+  }
+
+  .sns_img_box_top {
+    margin: 0;
+  }
+
+  .sns_img_box_bottom {
+    justify-content: flex-start;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .sns_tit {
+    position: absolute;
+    margin-top: 245px;
+    right: 90px;
+  }
+
+  /* footer */
+  #footer {
+    margin-top: 200px;
+  }
+
+  .footer_copyright {
+    width: 88%;
+  }
   }
 
   
