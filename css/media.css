@@ -30,6 +30,10 @@
     margin-top: 20px;
   }
 
+  .about_tit_img {
+    display: none;
+  }
+
   /* menu */
   #menu {
     flex-direction: column;

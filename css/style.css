@@ -1,5 +1,9 @@
 :root {
   /* Color */
+  --color-white: #fff;
+  --color-black: #000;
+  
+  /* Color */
   --sec-light-yellow: #fff3e0;
   --sec-middle-yellow: #ffe0b2;
   --sec-dark-yellow: #ffcc80;
@@ -9,7 +13,67 @@
   --sec-middle-mint: #c8e6c9;
   --sec-dark-mint: #a5d6a7;
   --sec-superdark-mint: #75a478;
+
+  /* Font size */
+  --font-large: 48px;
+  --font-medium: 28px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
+
+  /* Font weight */
+  --weight-extra-bold: 600;
+  --weight-bold: 500;
+  --weight-semi-bold: 400;
+  --weight-regular: 300;
+  --weight-thin: 200;
 }
+
+/* Typography */
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: var(--weight-extra-bold);
+  font-size: var(--font-medium);
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: var(--weight-bold);
+  font-size: var(--font-regular);
+  color: var(--color-black);
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: var(--font-regular);
+  font-size: var(--font-micro);
+  color: var(--color-black);
+  margin-top: 15px;
+  margin-bottom: 4px;
+}
+
+p {
+  font-family: 'Pretendard', '-apple-system', 'BlinkMacSystemFont', 'system-ui', 'Roboto', 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+  /* font-weight: var(--font-regular);
+  font-size: var(--font-small);
+  margin: 6px 0; */
+  font-weight: var(--weight-thin);
+  font-size: var(--font-micro);
+  margin-bottom: 18px;
+  line-height: 1.8;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
 
 .container {
   max-width: 1180px;
@@ -17,11 +81,59 @@
   margin: 0 auto;
 }
 
+/* nav */
+#nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: var(--weight-extra-bold);
+  text-transform: uppercase;
+  padding: 10px 28px;
+  z-index: 20;
+  top: 0;
+  left: 0;
+}
+
+.nav_container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.nav_menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+
+.nav_menu_item {
+  display: flex;
+}
+
+.nav_menu_item a {
+  margin: 0 35px;
+  font-size: var(--font-micro);
+  color: var(--color-black);
+}
+
+.nav_menu_item a:first-child {
+  margin-left: 0;
+}
+
+.nav_menu_item a:last-child {
+  margin-right: 0;
+}
+
+.nav_logo img {
+  max-width: 160px;
+}
+
 /* banner */
 #banner {
   width: 100%;
   height: 100vh;
-  background-color: var(--sec-light-mint);
 }
 
 .banner_wrap.swiper {
@@ -49,23 +161,84 @@
   align-items: center;
 }
 
-.banner.swiper-slide img {
-  display: block;
+.banner1 {
+  background: url(../img/banner_1.png) center/cover no-repeat;
+}
+.banner2 {
+  background: url(../img/banner_1.png) center/cover no-repeat;
+}
+.banner3 {
+  background: url(../img/banner_1.png) center/cover no-repeat;
+}
+
+.slide {
+  display: flex;
+  padding: 50px 50px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner_txt {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  color: var(--color-white);
+  line-height: 1.8;
+  margin-top: 40px;
 }
 
-.banners .banner:nth-child(odd) {
-  background-color: var(--sec-middle-mint);
+.banner_txt h1 {
+  font-size: var(--font-large);
+  margin: 16px 0;
 }
 
+.banner_txt p {
+  font-weight: var(--weight-thin);
+  opacity: 0.9;
+}
+
+.banner_btn {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--color-white);
+  font-size: var(--font-micro);
+  font-weight: var(--weight-thin);
+  margin: 80px 30px 10px;
+  padding: 6px 50px;
+  border: 0.5px solid var(--color-white);
+}
+
+/* Swiper 커스텀 */
+.swiper-pagination {
+  margin-bottom: 50px;
+}
+
+.swiper-pagination > .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  opacity: 0.6;
+  background: var(--color-white);
+}
+.swiper-pagination > .swiper-pagination-bullet-active {
+  width: 40px; 
+  transition: width 0.5s;
+  border-radius: 5px; 
+  background: var(--color-white); 
+  opacity: 1;
+}
+
+.banner_next {
+  margin-right: 50px;
+}
+
+.banner_prev {
+  margin-left: 50px;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
 
 /* about */
-#about {
-  background-color: var(--sec-light-yellow);
-}
-
 .about_wrap {
   max-width: 1330px;
   width: 95%;
@@ -74,7 +247,6 @@
 }
 
 .about_img {
-  background-color: var(--sec-middle-yellow);
   margin-top: 240px;
   width: 695px;
   height: 450px;
@@ -82,20 +254,42 @@
 }
 
 .about_tit {
-  background-color: var(--sec-middle-yellow);
   margin-top: 240px;
   width: 515px;
+  position: relative;
+}
+
+.about_tit h1 {
+  margin-top: 180px;
+  margin-bottom: 0;
+  font-size: var(--font-medium);
+  font-weight: var(--weight-extra-bold);
+}
+
+.about_tit_img {
+  position: absolute;
+  width: 200px;
+  top: -48px;
+  right: 0;
+}
+
+.arrow_icon {
+  display: inline-block;
+  padding: 10px 10px 7px;
+}
+
+.arrow_icon img {
+  width: 21px;
+  height: 8px;
 }
 
 /* menu */
 #menu {
-  background-color: var(--sec-light-mint);
   display: flex;
   justify-content: space-between;
 }
 
 .menu_left {
-  background-color: var(--sec-middle-mint);
   display: flex;
   flex-wrap: wrap;
   margin-top: 220px;
@@ -105,21 +299,21 @@
 }
 
 .menu_img_traveller {
-  background-color: var(--sec-dark-mint);
+  background: url(../img/traveller.png) center/cover no-repeat;
   width: 400px;
   height: 280px;
   margin-left: 300px;
 }
 
 .menu_img_men {
-  background-color: var(--sec-dark-mint);
+  background: url(../img/men.png) center/cover no-repeat;
   width: 400px;
   height: 280px;
   margin-top: 20px;
 }
 
 .menu_img_life {
-  background-color: var(--sec-dark-mint);
+  background: url(../img/life.png) center/cover no-repeat;
   width: 280px;
   height: 280px;
   margin-top: 20px;
@@ -131,21 +325,35 @@
 }
 
 .menu_img_signature {
-  background-color: var(--sec-dark-mint);
+  background: url(../img/signature.png) center/cover no-repeat;
   width: 320px;
   height: 580px;
 }
 
+.menu_img_desc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.menu_img_desc a {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--color-white);
+  font-size: var(--font-medium);
+  font-weight: var(--weight-extra-bold);
+}
+
 /* new */
 #new {
-  background-color: var(--sec-light-yellow);
+  /* background-color: var(--sec-light-yellow); */
   overflow-x: hidden;
 }
 
 .new_tit {
   margin-top: 220px;
   margin-left: 370px;
-  background-color: #fff;
 }
 
 .new_item_box .swiper {
@@ -156,7 +364,6 @@
 
 .new_item_set.swiper-wrapper {
   display: flex;
-  background-color: #a5d6a7;
   top: 0;
   left: 370px;
 }
@@ -179,57 +386,59 @@
 }
 
 .new_item {
-  background-color: var(--sec-middle-yellow);
   width: 350px !important;
-  height: 510px;
-  margin-right: 20px;
-}
-
-.new_item:last-child {
-  margin-right: 0;
 }
 
 .new_item_img {
-  background-color: var(--sec-dark-yellow);
   width: 100%;
   height: 420px;
 }
 
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.new_item_txt p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: var(--font-regular);
+  color: var(--color-black);
+  font-weight: var(--weight-extra-bold);
+  margin: 0;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  top: 43% !important;
+}
+
+.new_next {
+  margin-right: 50px;
+}
+
+.new_prev {
+  margin-left: 50px;
 }
 
 /* season */
 #season {
-  background-color: var(--sec-light-yellow);
-  margin-top: 200px;
+  margin-top: 180px;
   padding-top: 180px;
+  background: linear-gradient(to bottom, #E4E1D8 50%, transparent 50%);
 }
 
 #season .container {
-  background-color: var(--sec-middle-yellow);
   display: flex;
   justify-content: space-between;
 }
 
 .season_left {
-  background-color: var(--sec-dark-yellow);
   width: 590px;
 }
 
-.season_tit {
-  background-color: var(--sec-superdark-yellow);
-}
-
 .season_left_img {
-  background-color: var(--sec-superdark-yellow);
-  margin-top: 60px;
+  margin-top: 65px;
   margin-right: 90px;
   width: 500px;
-  height: 350px;
+}
+
+.season_left_img_bottom {
+  width: 245px;
 }
 
 .season_right {
@@ -237,11 +446,9 @@
 }
 
 .season_right_img {
-  background-color: var(--sec-superdark-yellow);
   margin-left: 140px;
   margin-top: 55px;
   width: 450px;
-  height: 700px;
 }
 
 .season_right p {
@@ -322,7 +529,7 @@
 }
 
 #sns .container {
-  max-width: 730px;
+  max-width: 745px;
   background-color: var(--sec-middle-yellow);
 }
 
@@ -333,7 +540,7 @@
 .sns_tit {
   display: flex;
   align-items: flex-end;
-  margin-left: 40px;
+  margin-left: 30px;
 }
 
 .sns_bottom {
