@@ -4,6 +4,17 @@
     width: 100%;
     height: 80vh;
   }
+
+  /* menu */
+  #menu {
+    justify-content: center;
+  }
+
+  .menu_left {
+    margin-left: 0;
+    margin-right: 20px;
+  }
+
 }
 
 @media screen and (max-width: 800px) {
@@ -11,6 +22,14 @@
   #banner {
     width: 100%;
     height: 80vh;
+  }
+
+  .banner_next {
+    margin-right: 50px;
+  }
+  
+  .banner_prev {
+    margin-left: 50px;
   }
 
   /* about */
@@ -103,7 +122,15 @@
   }
 
   .new_item {
-    width: 100% !important;
+    /* width: 100% !important; */
+  }
+  
+  .new_next {
+    margin-right: 50px;
+  }
+  
+  .new_prev {
+    margin-left: 50px;
   }
   
   /* season */
@@ -190,8 +217,9 @@
   #footer {
     margin-top: 200px;
   }
-.footer_cs h2 {
-    font-size: var(--font-small);
+
+  .footer_cs {
+    width: 80%;
   }
 
   .footer_copyright {

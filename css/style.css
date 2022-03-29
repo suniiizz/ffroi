@@ -187,7 +187,7 @@ button {
 
 .banner_txt h1 {
   font-size: var(--font-large);
-  margin: 16px 0;
+  margin-top: 16px;
 }
 
 .banner_txt p {
@@ -225,11 +225,11 @@ button {
 }
 
 .banner_next {
-  margin-right: 50px;
+  margin-right: 100px;
 }
 
 .banner_prev {
-  margin-left: 50px;
+  margin-left: 75px;
 }
 
 .swiper-button-next::after,
@@ -263,6 +263,10 @@ button {
   margin-bottom: 0;
   font-size: var(--font-medium);
   font-weight: var(--weight-extra-bold);
+}
+
+.about_tit p {
+  width: 87%;
 }
 
 .about_tit_img {
@@ -350,25 +354,21 @@ button {
 
 /* new */
 #new {
-  /* background-color: var(--sec-light-yellow); */
   overflow-x: hidden;
 }
 
 .new_tit {
   margin-top: 220px;
-  margin-left: 370px;
 }
 
-.new_item_box .swiper {
+.new_item_box {
   position: relative;
   width: 100%;
-  height: 100%;
 }
 
 .new_item_set.swiper-wrapper {
   display: flex;
   top: 0;
-  left: 370px;
 }
 
 .new_item .swiper-slide {
@@ -390,11 +390,12 @@ button {
 
 .new_item {
   width: 350px !important;
+  display: flex;
+  justify-content: center;
 }
 
 .new_item_img {
   width: 100%;
-  height: 420px;
 }
 
 .new_item_txt p {
@@ -405,17 +406,14 @@ button {
   margin: 0;
 }
 
-.swiper-button-next,
-.swiper-button-prev {
-  top: 43% !important;
-}
-
 .new_next {
-  margin-right: 50px;
+  right: -50px !important;
+  top: 40% !important;
 }
 
 .new_prev {
-  margin-left: 50px;
+  left: -50px !important;
+  top: 40% !important;
 }
 
 /* season */
@@ -534,6 +532,10 @@ button {
   width: 60%;
   display: flex;
   justify-content: space-between;
+}
+
+.footer_cs h2 {
+  font-size: var(--font-small);
 }
 
 .footer_cs li {
