@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="css/media.css">
 
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
 </head>
 
@@ -23,6 +24,18 @@
   <!-- nav -->
   <nav id="nav">
     <div class="nav_container">
+        <ul class="nav_menu_m">
+          <li>
+            <button class="menu-btn"><i class="ri-menu-2-line"></i></button>
+          </li>
+          <li>
+            <a href="#" class="nav_logo_m"><img src="img/logo.png" alt="로고"></a>
+          </li>
+          <li>
+            <a href="#"><i class="ri-user-3-line"></i></a>
+          </li>
+        </ul>
+
       <ul class="nav_menu">
         <li class="nav_menu_item">
           <a href="#">about</a>
@@ -126,10 +139,14 @@
   </section>
 
 <!-- new -->
-  <section id="new" class="new_container">
-    <div class="container">
+  <section id="new">
+    <div class="new_container">
       <div class="new_tit">
-        <h1>NEW RELEASE <a class="arrow_icon" href="#"><img src="img/아이콘_1.png" alt="arrow"></a> </h1>
+        <h1>NEW RELEASE 
+          <a class="arrow_icon" href="#">
+            <img src="img/아이콘_1.png" alt="arrow">
+          </a>
+        </h1>
       </div>
       <div class="new_item_box mySwiper">
         <div class="new_item_set swiper-wrapper">
@@ -275,7 +292,7 @@
 
   <!-- sns -->
   <section id="sns">
-    <div class="container">
+    <div class="sns_container">
         <div class="sns_top">
           <div class="sns_img">
             <a href="#">
@@ -307,52 +324,95 @@
   </section>
 
   <!-- footer -->
-  <section id="footer" class="container">
-    <div class="footer_cs">
-      <div class="customer">
-        <ul>
-          <h2 class="">CUSTOMER</h2>
-          <li><a href="#">주문조회</a></li>
-          <li><a href="#">취소 및 반품</a></li>
-          <li><a href="#">공지사항</a></li>
-          <li><a href="#">이용약관</a></li>
-          <li><a href="#">개인정보취급방침</a></li>
-        </ul>
+  <section id="footer" class="footer_container">
+    <div class="footer_m">
+      <ul class="footer_m_menu">
+        <li><h2>CUSTOMER</h2>
+          <ul class="sub">
+            <li><a href="#">주문조회</a></li>
+            <li><a href="#">취소 및 반품</a></li>
+            <li><a href="#">공지사항</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보취급방침</a></li>
+          </ul>
+        </li>
+        <li><h2 class="footer_list_tit">CONTACT</h2>
+          <ul class="sub">
+            <li><a href="#">주문조회</a></li>
+            <li><a href="#">취소 및 반품</a></li>
+            <li><a href="#">공지사항</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보취급방침</a></li>
+          </ul>
+        </li>
+        <li><h2 class="footer_list_tit">FOLLOW US</h2>
+          <ul class="sub footer_sns">
+            <li>
+              <a href="#" class="sns_icon">
+                <img src="img/아이콘_2.png" alt="아이콘2">
+              </a>
+              <a href="#" class="sns_icon">
+                <img src="img/아이콘_3.png" alt="아이콘3">
+              </a>
+            </li>
+          </ul>
+        </li>  
+        <li><h2 class="footer_list_tit">SHOWROOM</h2>
+          <ul class="sub">
+            <li><a href="#">+82 2 499 8410</a></li>
+            <li><a href="#">ffroioffice @ gmail.com</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="footer_w">
+      <div class="footer_cs">
+        <div class="customer footer_list">
+          <ul>
+            <h2 class="footer_list_tit">CUSTOMER</h2>
+            <li><a href="#">주문조회</a></li>
+            <li><a href="#">취소 및 반품</a></li>
+            <li><a href="#">공지사항</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보취급방침</a></li>
+          </ul>
+        </div>
+        <div class="contact footer_list">
+          <ul>
+            <h2 class="footer_list_tit">CONTACT</h2>
+            <li><a href="#">+82 2 499 8410</a></li>
+            <li><a href="#">ffroioffice @ gmail.com</a></li>
+          </ul>
+        </div>
+        <div class="showroom footer_list">
+          <ul class="showroom">
+            <h2 class="footer_list_tit">SHOWROOM</h2>
+            <li><a href="#">Mon - Fri : 12:00 - 19:00</a></li>
+            <li><a href="#">Sat.Sunday and Holiday : 11:00 - 20:00</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="contact">
-        <ul>
-          <h2>CONTACT</h2>
-          <li><a href="#">+82 2 499 8410</a></li>
-          <li><a href="#">ffroioffice @ gmail.com</a></li>
-        </ul>
-      </div>
-      <div class="showroom">
-        <ul class="showroom">
-          <h2>SHOWROOM</h2>
-          <li><a href="#">Mon - Fri : 12:00 - 19:00</a></li>
-          <li><a href="#">Sat.Sunday and Holiday : 11:00 - 20:00</a></li>
-        </ul>
+
+      <div class="footer_sns">
+        <a href="#" class="sns_icon">
+          <img src="img/아이콘_2.png" alt="아이콘2">
+        </a>
+        <a href="#" class="sns_icon">
+          <img src="img/아이콘_3.png" alt="아이콘3">
+        </a>
       </div>
     </div>
 
-    <div class="footer_sns">
-      <a href="#" class="sns_icon">
-        <img src="img/아이콘_2.png" alt="아이콘2">
-      </a>
-      <a href="#" class="sns_icon">
-        <img src="img/아이콘_3.png" alt="아이콘3">
-      </a>
-    </div>
-
-    <div class="footer_copyright">
-      <p>서울시 광진구 동일로 411 프루아 │ 대표번호 : +82 2 499 8410 (F +82 2 499 8411) </p>
-      <p>이메일 : info.ffroi@gmail.com │ 사업자등록번호 : 206 32 02096 │ 통신판매업신고 : 제 2018 - 서울광진 - 1211 호 │ 호스팅 : 카페24 │ copyright all right reserved ffroi </p>
-    </div>
+      <div class="footer_copyright">
+        <p>서울시 광진구 동일로 411 프루아 │ 대표번호 : +82 2 499 8410 (F +82 2 499 8411) </p>
+        <p>이메일 : info.ffroi@gmail.com │ 사업자등록번호 : 206 32 02096 │ 통신판매업신고 : 제 2018 - 서울광진 - 1211 호 │ 호스팅 : 카페24 │ copyright all right reserved ffroi </p>
+      </div>
   </section>
 
   <!-- script -->
   <!-- Swiper -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
 
   <script>
     //Swiper banner
@@ -362,10 +422,10 @@
       keyboard: {
         enabled: true,
       },
-      // autoplay: {
-      //   delay: 5000,
-      //   disableOnInteraction: false,
-      // },
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -382,7 +442,7 @@
         spaceBetween: 20,
         breakpoints: {
           800: {
-            slidesPerView: 1,
+            slidesPerView: 3,
             spaceBetween: 20,
           },
           1024: {
@@ -395,6 +455,25 @@
           prevEl: ".new_prev.swiper-button-prev",
         },
       });
+
+    //footer_m
+    // $('.footer_list > h2').click(function(){
+    //   let idx = $(this).index();
+    //   $(this).toggleClass('open');
+
+    //   if($(this).hasClass('open')) {
+    //       $('.footer_list li').show();
+    //     } else {
+    //       $('.footer_list li').hide();
+    //     }
+    // });
+
+    $(document).ready(function(){
+		$(".footer_m ul.sub").hide();
+		$(".footer_m ul.footer_m_menu li").click(function(){
+			$("ul",this).slideToggle("fast");
+		});
+	});
   </script>
 
 </body>
