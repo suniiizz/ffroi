@@ -526,7 +526,6 @@ button {
 
 /* footer */
 #footer {
-  position: relative;
   margin-top: 290px;
   padding-bottom: 50px;
 }
@@ -537,10 +536,15 @@ button {
   margin: 0 auto;
 }
 
+.footer_w {
+  position: relative;
+}
+
 .footer_cs {
   width: 60%;
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 .footer_cs h2 {
