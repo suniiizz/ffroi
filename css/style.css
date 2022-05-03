@@ -122,6 +122,10 @@ button {
   display: flex;
 }
 
+i {
+  font-size: 18px;
+}
+
 /* banner */
 #banner {
   width: 100%;
