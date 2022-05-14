@@ -98,7 +98,7 @@ button {
 
 .nav_menu_item a {
   margin: 0 35px;
-  font-size: var(--font-micro);
+  font-size: var(--font-small);
   color: var(--color-black);
 }
 

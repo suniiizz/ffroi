@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="./css/sub.css">
   <link rel="stylesheet" href="./css/sub_media.css">
 
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 <body>
   <!-- nav -->
@@ -67,6 +68,7 @@
             <a href="#">
               <div class="product_img">
                 <img src="./img/signature_1.png" alt="상품1">
+                <span class="new_label">NEW</span>
               </div>
               <div class="product_txt">
                 <h3>Aver_mini v</h3>
@@ -78,6 +80,7 @@
             <a href="#">
               <div class="product_img">
                 <img src="./img/signature_2.png" alt="상품2">
+                <span class="new_label">NEW</span>
               </div>
               <div class="product_txt">
                 <h3>Zero</h3>
@@ -100,6 +103,7 @@
             <a href="#">
               <div class="product_img">
                 <img src="./img/signature_4.png" alt="상품4">
+                <span class="sale_label">SOLD OUT</span>
               </div>
               <div class="product_txt">
                 <h3>Chapter</h3>
@@ -144,6 +148,7 @@
             <a href="#">
               <div class="product_img">
                 <img src="./img/signature_8.png" alt="상품8">
+                <span class="sale_label">SOLD OUT</span>
               </div>
               <div class="product_txt">
                 <h3>Toast</h3>
@@ -157,14 +162,18 @@
       <div class="mid_banner">
         <div class="mid_banner_inner">
           <div class="mid_banner_wrap mother_hood">
-            <h1>ffroi with <br> Mother Ground</h1>
-            <span>프루아&마더그라운드 협업 컬렉션</span>
+            <div class="mid_banner_txt">
+              <h1>ffroi with <br> Mother Ground</h1>
+              <span>프루아&마더그라운드 협업 컬렉션</span>
+            </div>
           </div>
         </div>
         <div class="mid_banner_inner">
           <div class="mid_banner_wrap jeju">
-            <h1>HOLYDAY IN - JEJU</h1>
-            <span>제주도 팝업스토어 오픈</span>
+            <div class="mid_banner_txt">
+              <h1>HOLYDAY IN - JEJU</h1>
+              <span>제주도 팝업스토어 오픈</span>
+            </div>
           </div>
         </div>
       </div>
@@ -255,7 +264,11 @@
               </div>
               <div class="product_txt">
                 <h3>Keaton mini</h3>
-                <p>260,000</p>
+                <div class="sale">
+                  <p>260,000</p>
+                  <p>5%</p>
+                  <p>247,000</p>
+                </div>
               </div>
             </a>
           </li>
@@ -379,6 +392,14 @@
           $('.pagination li a').eq(idx).addClass('on');
         })
       });
+
+    //footer_m
+    $(document).ready(function(){
+      $(".footer_m ul.sub").hide();
+      $(".footer_m ul.footer_m_menu li").click(function(){
+        $("ul",this).slideToggle("fast");
+      });
+    });
   </script>
 
 </body>
