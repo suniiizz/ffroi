@@ -351,7 +351,7 @@ i {
   height: 100%;
 }
 
-.menu_img_desc a {
+.menu_img_desc span {
   font-family: 'Montserrat', sans-serif;
   color: var(--color-white);
   font-size: var(--font-medium);
