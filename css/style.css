@@ -148,7 +148,7 @@ i {
   max-width: 450px;
   top: 0;
   left: 0;
-  padding: 120px 65px 40px 65px;
+  padding: 150px 65px 40px 65px;
   background-color: var(--color-white);
   transform: translateX(100%);
   opacity: 0;
@@ -172,7 +172,7 @@ i {
 
 .sidemenu_wrap {
   transition: 0.3s all cubic-bezier(.49,.01,.27,1);
-  font-size: var(--font-small);
+  font-size: var(--font-regular);
   font-weight: var(--weight-extra-bold);
   font-family: 'Montserrat', sans-serif;
 }
