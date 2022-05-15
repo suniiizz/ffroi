@@ -26,7 +26,7 @@
             <button class="menu-btn"><i class="ri-menu-2-line"></i></button>
           </li>
           <li>
-            <a href="#" class="nav_logo_m"><img src="../img/logo.png" alt="로고"></a>
+            <a href="../index.html" class="nav_logo_m"><img src="../img/logo.png" alt="로고"></a>
           </li>
           <li>
             <a href="#"><i class="ri-user-3-line"></i></a>
@@ -39,7 +39,7 @@
           <a href="#">shop</a>
         </li>
         <li class="nav_logo">
-          <a href="#"><img src="../img/logo.png" alt="로고"></a>
+          <a href="../index.html"><img src="../img/logo.png" alt="로고"></a>
         </li>
         <li class="nav_menu_item">
           <a href="#">cart</a>
@@ -48,6 +48,37 @@
       </ul>  
     </div>
   </nav>
+
+  <!-- sidemenu -->
+  <div class="sidemenu">
+    <div class="sidemenu_wrap">
+      <ul class="side">
+        <li class="sidemenu_list"><a href="./sub.html"><span>SIGNATURE</span></a></li>
+        <li class="sidemenu_list"><a href="./sub.html"><span>TRAVELLER</span></a></li>
+        <li class="sidemenu_list"><a href="./sub.html"><span>MEN</span></a></li>
+        <li class="sidemenu_list"><a href="./sub.html"><span>LIFE</span></a></li>
+      </ul>
+
+      <ul class="side_m">
+        <li class="sidemenu_list"><a href="#"><span>ABOUT</span></a></li>
+        <li class="sidemenu_list shop">
+          <span>SHOP</span>
+          <ul class="shop_list">
+            <li><a href="#"><span>SIGNATURE</span></a></li>
+            <li><a href="#"><span>TRAVELLER</span></a></li>
+            <li><a href="#"><span>MEN</span></a></li>
+            <li><a href="#"><span>LIFE</span></a></li>
+          </ul>
+        </li>
+        <li class="sidemenu_list"><a href="#"><span>COLLECTION</span></a></li>
+        <li class="sidemenu_list"><a href="#"><span>JOURNAL</span></a></li>
+        <li class="sidemenu_list"><a href="#"><span>CUSTOMER</span></a></li>
+        <li class="sidemenu_list"><a href="#"><span>HOME</span></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="overlay"></div>
 
   <!-- product -->
   <section id="product">
@@ -290,7 +321,7 @@
   <section id="footer" class="footer_container">
     <div class="footer_m">
       <ul class="footer_m_menu">
-        <li><h2>CUSTOMER</h2>
+        <li><h2 class="footer_list_tit">CUSTOMER</h2>
           <ul class="sub">
             <li><a href="#">주문조회</a></li>
             <li><a href="#">취소 및 반품</a></li>
@@ -301,11 +332,8 @@
         </li>
         <li><h2 class="footer_list_tit">CONTACT</h2>
           <ul class="sub">
-            <li><a href="#">주문조회</a></li>
-            <li><a href="#">취소 및 반품</a></li>
-            <li><a href="#">공지사항</a></li>
-            <li><a href="#">이용약관</a></li>
-            <li><a href="#">개인정보취급방침</a></li>
+            <li><a href="#">+82 2 499 8410</a></li>
+            <li><a href="#">ffroioffice @ gmail.com</a></li>
           </ul>
         </li>
         <li><h2 class="footer_list_tit">FOLLOW US</h2>
@@ -322,8 +350,8 @@
         </li>  
         <li><h2 class="footer_list_tit">SHOWROOM</h2>
           <ul class="sub">
-            <li><a href="#">+82 2 499 8410</a></li>
-            <li><a href="#">ffroioffice @ gmail.com</a></li>
+            <li><a href="#">Mon - Fri : 12:00 - 19:00</a></li>
+            <li><a href="#">Sat.Sunday and Holiday : 11:00 - 20:00</a></li>
           </ul>
         </li>
       </ul>
@@ -375,6 +403,36 @@
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
   <script>
+    // sidemenu
+    $('.nav_shop, .menu-btn').click(function(){
+      $(this).toggleClass('on');
+      
+      if($(this).hasClass('on')) {
+        $('.sidemenu').addClass('on');
+        $('.overlay').addClass('on');
+        $('#nav').addClass('on');
+
+        $('.overlay').click(function(){
+          $('.sidemenu').removeClass('on');
+          $('.overlay').removeClass('on');
+          $('#nav').removeClass('on');
+        });
+
+      } else {
+        $('.sidemenu').removeClass('on');
+        $('.overlay').removeClass('on');
+        $('#nav').removeClass('on');
+      }
+    });
+
+    //sidemenu - shop
+    $(document).ready(function(){
+      $(".shop_list").hide();
+      $(".shop").click(function(){
+        $("ul",this).slideToggle("fast");
+      });
+    });
+
     // product option
     $(document).ready(function(){
         $('.product_option').click(function(){

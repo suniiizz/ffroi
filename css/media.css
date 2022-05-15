@@ -257,8 +257,31 @@
     padding: 0 28px;
   }
 
+  #nav.on {
+    background-color: transparent;
+  }
+
   .nav_container {
     padding: 10px 30px;
+  }
+
+  /* sidemenu */
+  .sidemenu {
+    width: 100%;
+    max-width: none;
+    height: auto;
+  }
+
+  .side_m {
+    display: block;
+  }
+
+  .side {
+    display: none;
+  }
+
+  .overlay {
+    display: block;
   }
 
   /* banner */
