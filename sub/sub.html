@@ -35,7 +35,7 @@
 
       <ul class="nav_menu">
         <li class="nav_menu_item">
-          <a href="#">about</a>
+          <a href="#" class="nav_about">about</a>
           <a href="#" class="nav_shop">shop</a>
         </li>
         <li class="nav_logo">
@@ -64,10 +64,10 @@
         <li class="sidemenu_list shop">
           <span>SHOP</span>
           <ul class="shop_list">
-            <li><a href="#"><span>SIGNATURE</span></a></li>
-            <li><a href="#"><span>TRAVELLER</span></a></li>
-            <li><a href="#"><span>MEN</span></a></li>
-            <li><a href="#"><span>LIFE</span></a></li>
+            <li><a href="./sub.html"><span>SIGNATURE</span></a></li>
+            <li><a href="./sub.html"><span>TRAVELLER</span></a></li>
+            <li><a href="./sub.html"><span>MEN</span></a></li>
+            <li><a href="./sub.html"><span>LIFE</span></a></li>
           </ul>
         </li>
         <li class="sidemenu_list"><a href="#"><span>COLLECTION</span></a></li>
@@ -191,22 +191,22 @@
       </div>
 
       <div class="mid_banner">
-        <div class="mid_banner_inner">
+        <a href="#" class="mid_banner_inner">
           <div class="mid_banner_wrap mother_hood">
             <div class="mid_banner_txt">
               <h1>ffroi with <br> Mother Ground</h1>
               <span>프루아&마더그라운드 협업 컬렉션</span>
             </div>
           </div>
-        </div>
-        <div class="mid_banner_inner">
+        </a>
+        <a href="#" class="mid_banner_inner">
           <div class="mid_banner_wrap jeju">
             <div class="mid_banner_txt">
               <h1>HOLYDAY IN - JEJU</h1>
               <span>제주도 팝업스토어 오픈</span>
             </div>
           </div>
-        </div>
+        </a>
       </div>
 
       <div class="product_list2 container">
@@ -404,21 +404,18 @@
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
   <script>
     // sidemenu
-    $('.nav_shop, .menu-btn').click(function(){
+    $('.nav_about, .nav_shop, .menu-btn').click(function(){
       $(this).toggleClass('on');
       
       if($(this).hasClass('on')) {
-        $('.sidemenu').addClass('on');
-        $('.overlay').addClass('on');
+        $('.sidemenu, .overlay').addClass('on');
 
         $('.overlay').click(function(){
-          $('.sidemenu').removeClass('on');
-          $('.overlay').removeClass('on');
+          $('.sidemenu, .overlay').removeClass('on');
         });
 
       } else {
-        $('.sidemenu').removeClass('on');
-        $('.overlay').removeClass('on');
+        $('.sidemenu, .overlay').removeClass('on');
       }
     });
 
